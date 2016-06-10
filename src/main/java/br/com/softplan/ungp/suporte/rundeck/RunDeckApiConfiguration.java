@@ -1,5 +1,8 @@
 package br.com.softplan.ungp.suporte.rundeck;
 
+import br.com.softplan.ungp.suporte.rundeck.api.DefaultRestExecutor;
+import br.com.softplan.ungp.suporte.rundeck.api.JobApi;
+import br.com.softplan.ungp.suporte.rundeck.api.ProjectApi;
 import br.com.softplan.ungp.suporte.rundeck.api.RunDeckApi;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
@@ -14,4 +17,23 @@ import javax.sql.DataSource;
 @ConditionalOnProperty(prefix = "rundeck.api", name = "url")
 public class RunDeckApiConfiguration {
 
+    @Bean
+    public RunDeckApi runDeckApi(){
+        return new RunDeckApi();
+    }
+
+    @Bean
+    public JobApi jobApi(){
+        return new JobApi();
+    }
+
+    @Bean
+    public ProjectApi projectApi(){
+        return new ProjectApi();
+    }
+
+    @Bean
+    public DefaultRestExecutor restExecutor(){
+        return new DefaultRestExecutor();
+    }
 }

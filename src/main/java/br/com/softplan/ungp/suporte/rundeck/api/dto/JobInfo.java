@@ -6,15 +6,6 @@ package br.com.softplan.ungp.suporte.rundeck.api.dto;
 
 import java.net.URI;
 
-/**
- * <job id='4411650d-dcca-4407-a9b8-83bdc0c28011' href='https://rundeck-ungp.softplan.com.br/api/17/job/4411650d-dcca-4407-a9b8-83bdc0c28011' permalink='https://rundeck-ungp.softplan.com.br/project/PMSBC-TST/job/show/4411650d-dcca-4407-a9b8-83bdc0c28011'
- * scheduled='false' scheduleEnabled='true' enabled='true'>
- * <name>Ações do Ambiente</name>
- * <group />
- * <project>PMSBC-TST</project>
- * <description>run, start, stop, restart, rm, rmi</description>
- * </job>
- */
 public class JobInfo {
 
     private String id;
