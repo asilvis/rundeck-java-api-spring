@@ -1,8 +1,5 @@
 package br.com.softplan.ungp.suporte.rundeck.api.dto;
 
-import javax.xml.bind.annotation.XmlElementWrapper;
-import javax.xml.bind.annotation.XmlRootElement;
-
 /**
  * Created by andre.lima on 07/06/2016.
  */
