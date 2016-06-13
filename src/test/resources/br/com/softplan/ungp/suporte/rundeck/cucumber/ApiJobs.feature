@@ -18,6 +18,6 @@ Funcionalidade: Api de Jobs
       | name              | description                        | id                                   |
       | Ações do Ambiente | run, start, stop, restart, rm, rmi | 4411650d-dcca-4407-a9b8-83bdc0c28011 |
     E na definição de job estarão presentes as opções:
-      | name      | description | enforcedvalues | required | valuesUrl | values                                                                                                                                                                                                |
+      | name      | description | enforcedvalues | required | valuesUrl | values                                                                                                                                                                                                 |
       | Instancia |             | true           | true     |           | cpa-pmsbc-ext-1,cpa-pmsbc-int-1,cpa-pmsbc-int-2,cpa-pmsbc-int-3,cpa-pmsbc-int-4,infra-pmsbc-broffice,infra-pmsbc-httpd,sup-pmsbc-int-1,sup-pmsbc-int-2,sup-pmsbc-int-3,sup-pmsbc-int-4,sup-pmsbc-int-5 |
-      | Instrucao |             | true           | true     |           | restart,rm,rmi,run,start,stop                                                                                                                                                                         |
+      | Instrucao |             | true           | true     |           | restart,rm,rmi,run,start,stop                                                                                                                                                                          |
