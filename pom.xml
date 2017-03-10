@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>br.com.softplan.ungp.spring</groupId>
     <artifactId>rundeck-java-api</artifactId>
-    <version>00.01.00</version>
+    <version>00.01.01</version>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

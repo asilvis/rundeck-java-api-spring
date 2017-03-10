@@ -8,12 +8,13 @@ import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlElement;
 
 /**
- * enforcedvalues='true' name='editorswf_atual' required='true' valuesUrl='http://server2125:82/editor.json'
+ * enforcedvalues='true' name='editorswf_atual' required='true' valuesUrl='http://server2125:82/editor.json' multivalued='true'
  */
 public class ContextOption {
     private boolean enforcedvalues;
     private String name;
     private boolean required;
+    private boolean multivalued;
     private String valuesUrl;
     private String values;
     private String description;
@@ -70,5 +71,14 @@ public class ContextOption {
 
     public void setValues(String values) {
         this.values = values;
+    }
+
+    @XmlAttribute
+    public boolean isMultivalued() {
+        return multivalued;
+    }
+
+    public void setMultivalued(boolean multivalued) {
+        this.multivalued = multivalued;
     }
 }
